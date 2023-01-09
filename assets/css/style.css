@@ -1,0 +1,63 @@
+.hand-hover:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 10px;
+    border-bottom: solid 1px black;
+}
+
+.navbar-brand {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.container {
+    padding-left: 30px;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+.flex-display {
+    display: flex;
+}
+
+.flex-item-quarter{
+    flex: 25%;
+}
+
+.flex-item-three-quarter {
+    flex: 75%;
+}
+
+.flex-item-half {
+    flex: 50%;
+}
+
+.flex-item-sixth {
+    flex: 16.666%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-secondary {
+    color: grey;
+}
+
+.border  {
+    border: solid 1px black;
+}
+
+.table {
+    width: 100%;
+    padding: 10px;
+}
+.table td  {
+    padding: 15px;
+}

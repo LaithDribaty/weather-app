@@ -20,7 +20,7 @@ const hourRowComponent = (time, icon, temp) => {
           <embed src="assets/icons/${icon}.svg" width="30" height="30"/>
         </td>
 
-        <td> ${temp} </td>
+        <td> ${temp} &#8451; </td>
         <td> .. </td>
     </tr>
   `;
@@ -29,15 +29,15 @@ const hourRowComponent = (time, icon, temp) => {
 // to be rendered when fetching data
 const dayComponent = (temp, icon, day, index) => {
   return `
-    <div class="col-2 text-center p-4">
-      <div class="border border-dark hand-hover" onclick="changeHoursContent(${index})">
+    <div class="flex-item-sixth text-center padding-15">
+      <div class="border hand-hover" onclick="changeHoursContent(${index})">
         <div>
           <b>
             ${ days[ day ] }
           </b>
         </div>
         <div>
-          ${temp}
+          ${temp} &#8451;
         </div>
         <div>
           <embed src="assets/icons/${icon}.svg" width="60" height="60"/>
@@ -58,7 +58,7 @@ fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/service
 
         document.getElementById('stats-container').innerHTML =  `<embed src="assets/icons/${todayWeather.days[0].icon}.svg" width="150" height="150"/>`;
 
-        document.getElementById('stats-container').innerHTML += `<b>${todayWeather.days[0].feelslike}</b>`;
+        document.getElementById('stats-container').innerHTML += `<b>${todayWeather.days[0].feelslike} &#8451;</b>`;
         document.getElementById('wind-container').innerHTML += todayWeather.days[0].windspeed;
         
         
